@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.valentine-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.valentine-card img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.valentine-card button a:nth-child(1){
+    padding: 10px 10px;
+    width: 8rem;
+    background-color: rgb(102, 219, 102);
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.valentine-card button a:nth-child(2){
+    padding: 10px 10px;
+    width: 8rem;
+    background-color: rgb(219, 135, 102);
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button button {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.yes-btn {
+    background-color: rgb(102, 219, 102);
+    border: none;
+    border-radius: 5px;
+    width: 8rem; 
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.no-btn {
+    background-color: rgb(219, 135, 102);
+    border: none;
+    border-radius: 5px;
+    width: 8rem; 
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .valentine-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .valentine-card h1{
+        font-size: 1.5rem
+    }
+
+    .valentine-card img{
+        max-width: 250px;
+    }
+
+    .valentine-card .button{
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+        margin-top: 15px;
+    }
+
+
+    .valentine-card button {
+        width: 6rem; 
+        padding: 8px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .valentine-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .valentine-card h1{
+        font-size: 1rem;
+    }
+
+    
+    .valentine-card .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; 
+        margin-top: 15px;
+    }
+
+    .valentine-card img{
+        max-width: 200px;
+    }
+
+    .valentine-card button {
+        width: 5rem;
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+}
